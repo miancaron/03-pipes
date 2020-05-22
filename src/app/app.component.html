@@ -87,6 +87,35 @@
                     <td> {{ salario | currency:'LMP ':'symbol':'.0-0' }} </td>
                 </tr>
 
+                <tr>
+                    <td> {{ valorPromesa }} </td>
+                    <td> async </td>
+                    <td> {{ valorPromesa | async}} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date </td>
+                    <td> {{ fecha | date }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date:'medium' </td>
+                    <td> {{ fecha | date:'medium' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date:'short' </td>
+                    <td> {{ fecha | date:'short' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date:'MMMM - d' </td>
+                    <td> {{ fecha | date:'MMMM - d' }} </td>
+                </tr>
 
 
                 <tr>
