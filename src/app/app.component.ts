@@ -19,6 +19,8 @@ export class AppComponent {
 
   fecha: Date = new Date();
 
+  idioma: string = 'es';
+
   valorPromesa = new Promise<string>( (resolve) => {
 
     setTimeout(() => {
@@ -35,6 +37,10 @@ export class AppComponent {
       calle: 'Primera',
       casa: 20
     }
+  }
+
+  setIdioma( idioma: string){
+    this.idioma = idioma;
   }
 
 }

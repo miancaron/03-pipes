@@ -113,9 +113,34 @@
 
                 <tr>
                     <td> {{ fecha }} </td>
-                    <td> date:'MMMM - d' </td>
-                    <td> {{ fecha | date:'MMMM - d' }} </td>
+                    <td> date:'MMMM - dd' </td>
+                    <td> {{ fecha | date:'MMMM - dd' }} </td>
                 </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date:'MMMM - dd':'':'en' </td>
+                    <td> {{ fecha | date:'MMMM - dd':'':'en' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td> date:'MMMM - dd':'':'fr' </td>
+                    <td> {{ fecha | date:'MMMM - dd':'':'fr' }} </td>
+                </tr>
+
+                <tr>
+                    <td> {{ fecha }} </td>
+                    <td>
+                        date:'MMMM - dd':'':'{{ idioma }}'
+                        <br>
+                        <button class="mr-1 btn btn-primary" (click)="setIdioma('es')">Español</button>
+                        <button class="mr-1 btn btn-secondary" (click)="setIdioma('en')">Inglés</button>
+                        <button class="mr-1 btn btn-success" (click)="setIdioma('fr')">Francés</button>
+                    </td>
+                    <td> {{ fecha | date:'MMMM - dd':'':idioma }} </td>
+                </tr>
+
 
 
                 <tr>
