@@ -20,6 +20,8 @@ export class AppComponent {
 
   fecha: Date = new Date();
 
+  activar: boolean = true;
+
   idioma: string = 'es';
 
   videoUrl : string = 'https://www.youtube.com/embed/2oX2FSv4Rys';
@@ -44,6 +46,16 @@ export class AppComponent {
 
   setIdioma( idioma: string){
     this.idioma = idioma;
+  }
+
+  cambiarActivar(){
+    if (this.activar){
+      this.activar = false;
+    }
+    else {
+      this.activar = true;
+    }
+
   }
 
 }
