@@ -49,13 +49,7 @@ export class AppComponent {
   }
 
   cambiarActivar(){
-    if (this.activar){
-      this.activar = false;
-    }
-    else {
-      this.activar = true;
-    }
-
+    this.activar = !this.activar;
   }
 
 }

@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ContrasenaPipe implements PipeTransform {
 
-  transform(value: string, activar: boolean): string {
-    if( activar ){
+  transform(value: string, activarContrasena: boolean = false): string {
+    if( activarContrasena ){
 
       let ocultar: string = '';
 
